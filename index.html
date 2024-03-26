@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Yan Shuheng's Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.w3-sidebar {width: 120px;background: #222;}
+#main {margin-left: 120px}
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+</head>
+<body class="w3-black">
+
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Your avatar image here -->
+  <img src="/images/my_photo.png" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#experience" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-briefcase w3-xxlarge"></i>
+    <p>EXPERIENCE</p>
+  </a>
+  <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PROJECTS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<div class="w3-padding-large" id="main">
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo">I'm Yan Shuheng.</h1>
+    <p>Major in AI and Digital Media Technology-----Student ID: 23467150</p>
+    <!-- Replace with your own image -->
+    <img src="/.images/my_photo.png" alt="Yan Shuheng" class="w3-image" width="992" height="1108">
+  </header>
+
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">About Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>
+      I graduated from Xiamen University Malaysia with a Bachelor of Engineering in Digital Media Technology. My passion lies in combining the artistic aspects of design with the technical capabilities of digital media. My professional journey includes internships in video design, web development, and digital marketing, equipping me with a diverse skill set ranging from Adobe Creative Suite mastery to advanced web development techniques.
+    </p>
+    <!-- Photo Gallery -->
+    <h3 class="w3-padding-16 w3-text-light-grey">My Gallery</h3>
+    <div class="w3-row-padding w3-center">
+        <div class="w3-col s4">
+            <img src="./images/p1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Image 1">
+        </div>
+        <div class="w3-col s4">
+            <img src="./images/p2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Image 2">
+        </div>
+        <div class="w3-col s4">
+            <img src="./images/p3.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Image 3">
+        </div>
+        <div class="w3-col s4">
+          <img src="./images/p4.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Image 4">
+        </div>
+        <div class="w3-col s4">
+            <img src="./images/my_photo.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Image 5">
+        </div>
+        <div class="w3-col s4">
+            <img src="./images/my_photo.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Image 6">
+        </div>
+        <!-- Video Section -->
+        <div class="w3-col s3">
+          <video style="width:100%" controls class="w3-hover-opacity">
+              <source src="./images/play.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+      </div>
+    </div>
+    
+    <!-- The Modal/Lightbox -->
+    <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+        <div class="w3-modal-content w3-animate-zoom">
+            <img id="img01" style="width:100%">
+        </div>
+    </div>
+    
+    <script>
+        // Script to open and close the modal
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+        }
+    </script>
+
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <p class="w3-wide">Video Design</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">Web Development</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide">Digital Marketing</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:75%"></div>
+    </div>
+    <br>
+
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">4+</span><br>
+        Internships
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">6+</span><br>
+        Projects Completed
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">20+</span><br>
+        Happy Clients
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">100+</span><br>
+        Professional Meetings
+      </div>
+    </div>
+
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
+  </div>
+  
+  <div class="w3-padding-64 w3-content" id="experience">
+    <h2 class="w3-text-light-grey">Experience</h2>
+    <hr style="width:200px" class="w3-opacity">
+    
+    <!-- Video Designer Business Department Bluefocus, Shanghai -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64">
+      <h3>Video Designer - Business Department, Bluefocus, Shanghai</h3>
+      <p>02/09/2022 - 21/10/2022</p>
+      <p>Designed advertising copy of products including Alibaba Cloud Servers, Gudong Box, and Duwu App. Created short video ads for Bilibili platform and assisted in advertising poster design using Photoshop.</p>
+    </div>
+
+    <!-- AE intern Mediacom GroupM (Shanghai) Advertising Co. Ltd, Shanghai -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64">
+      <h3>AE Intern - Mediacom GroupM (Shanghai) Advertising Co., Ltd, Shanghai</h3>
+      <p>06/01/2022 - 12/08/2022</p>
+      <p>Collected and organized data for Adidas's WeChat department, assisting in weekly and monthly reports. Managed advertising setup in WeChat Moments and supported various daily administrative tasks.</p>
+    </div>
+
+    <!-- Operator intern New Media Department Xiamen Seeast International Network Technology Co. Ltd, Xiamen -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64">
+      <h3>Operator Intern - New Media Department, Xiamen Seeast International Network Technology Co., Ltd, Xiamen</h3>
+      <p>08/08/2021 - 27/12/2021</p>
+      <p>Managed the TikTok official account for Grotto's flagship store, crafting video content according to product types and trends. Participated in product unpacking video shoots, including scene setup and lighting control, and performed video editing and traffic analysis.</p>
+    </div>
+
+    <!-- Foreign Trade Specialist intern Ministry of Foreign Trade Xiamen UTOP International Co. Ltd, Xiamen -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64">
+      <h3>Foreign Trade Specialist Intern - Ministry of Foreign Trade, Xiamen UTOP International Co., Ltd, Xiamen</h3>
+      <p>05/05/2020 - 30/09/2020</p>
+      <p>Engaged in negotiation with DRYWORLD company, providing sample designs for travel bags. Finalized appearance design and pricing within 2 days, enhancing communication efficiency and contributing to the completion of a 1200+ travel bag order, thereby increasing department work efficiency by 30%.</p>
+    </div>
+</div>
+
+
+<div class="w3-padding-64 w3-content" id="projects">
+  <h2 class="w3-text-light-grey">Projects</h2>
+  <hr style="width:200px" class="w3-opacity">
+
+  <!-- Collection Platform for Students' Summer Quality Development Projects -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64">
+    <h3>Collection Platform for Students' Summer Quality Development Projects</h3>
+    <p>07/2021 - Deputy Leader, Technology Department</p>
+    <p>Responsible for creating promotional videos, I utilized Animate CC for animation production and Premiere Pro for video editing, contributing significantly to the project's success. Our project received the third prize in the national award at the China-Malaysia Youth Innovation and Entrepreneurship Competition.</p>
+  </div>
+
+  <!-- Audio-visual Language Project -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64">
+    <h3>Audio-visual Language Project</h3>
+    <p>09/2020 - Team Leader</p>
+    <p>Orchestrated a team to produce a microfilm, overseeing all aspects from scriptwriting to post-production. My role included directing, scheduling, and ensuring smooth cooperation among team members. The project was highly appreciated for its creativity and execution.</p>
+  </div>
+
+  <!-- 3D Animation Production Project -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64">
+    <h3>3D Animation Production Project</h3>
+    <p>04/2022 - Team Member</p>
+    <p>Participated in script creation and shot conception, utilizing Maya for character animation and responsible for post-production editing. This project allowed me to deepen my understanding of 3D animation techniques and collaborative creation processes.</p>
+  </div>
+
+  <!-- 2D Animation Production Project -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64">
+    <h3>2D Animation Production Project</h3>
+    <p>02/2020 - Team Member</p>
+    <p>Contributed to the creation of scripts and storyboard development. Used Procreate for character and scene design, integrating these elements into Animate CC for frame-by-frame animation, followed by post-production editing. This project honed my skills in 2D animation and team collaboration.</p>
+  </div>
+</div>
+
+
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Xiamen, Fujian, China</p>
+    <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> +86 17705926035</p>
+    <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> dmt1809293@xmu.edu.my</p>
+    <p>Let's get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" method="post">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  </div>
+  
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
